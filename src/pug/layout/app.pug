@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Diploma
+    link(rel="stylesheet", href="css/main.min.css")
+  body
+    
+    include ../chunk/header
+    include ../chunk/main_section1
+    include ../chunk/footer
+
+
+
+
+
+
+
+    script(src="js/main.js")
+    script var hamburger = document.querySelector('button.hamburger'); var header__navbar = document.querySelector('.header__navbar'); hamburger.addEventListener('click', function() {hamburger.classList.toggle('active'); header__navbar.classList.toggle('active');})

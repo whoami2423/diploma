@@ -1,0 +1,121 @@
+.section4 {
+  max-width: 100%;
+  margin-top: 220px;
+  background: url(../../img/bg_main4.webp) no-repeat right center;
+  position: relative;
+  &__article--title {
+    @include flex(center, center, column);
+  }
+  &__line {
+    width: 56px;
+    height: 3px;
+    background: black;
+  }
+  &__article--dots {
+    background-image: repeating-radial-gradient(
+      #97c3f966,
+      #93c1f966 3.6px,
+      transparent 1px,
+      transparent 100%
+    );
+    background-size: 20px 20px, 100% 100%;
+    background-repeat: repeat;
+    position: absolute;
+    top: 122px;
+    left: 203px;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+  }
+  &__container {
+    @include media("320px") {
+      @include grid(repeat(3, 1fr), 1fr, 1rem);
+    }
+    @include media("500px") {
+      @include grid(1fr, repeat(auto-fill, minmax(350px, 1fr)), 1.2rem);
+    }
+    @include media("1440px") {
+      @include grid(1fr, repeat(3, 1fr), 1.8rem);
+      margin: 4.5rem 15rem;
+    }
+  }
+  &__container--items {
+    box-shadow: 10px 40px 50px 0px #e5e9f666;
+    border-radius: 20px;
+    position: relative;
+    height: 32.5rem;
+    @include media("1440px"){
+padding-bottom: 20px;
+    }
+  }
+  &__container--inner {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    background: white/cover;
+    padding: 0px 33px 15px 33px;
+    z-index: 5;
+    border-radius: 0 0 20px 20px;
+    @include media("700px") {
+      width: 98%;
+      height: 48%;
+      margin-top: 16px;
+    }
+    @include media("1050px") {
+      width: 97%;
+      height: 46%;
+      margin-top: 11px;
+    }
+  }
+  &__container--title {
+    font-weight: 700;
+    font-size: 21px;
+  }
+  &__container--text {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #7d7987;
+  }
+  &__container--link {
+    font-weight: 600;
+    font-size: 1.0625rem;
+    color: #4089ed;
+  }
+  &__container--img {
+    margin-left: 0.625rem;
+  }
+  &__article--button {
+    @include flex(center, center);
+    padding-bottom: 4.6875rem;
+    @include media("320px") {
+      margin-top: 1.5rem;
+    }
+    @include media("1440px") {
+      margin-top: 0;
+    }
+  }
+  &__button {
+    border: 1.4px solid #458ff6;
+    border-radius: 55px;
+    padding: 10px 45px;
+    background: white;
+    position: relative;
+  }
+  &__button--link {
+    color: #458ff6;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+.item1 {
+  background: url(../../img/pic4.webp) no-repeat center top/100% 50%;
+  position: relative;
+}
+.item2 {
+  background: url(../../img/pic5.webp) no-repeat center top/100% 50%;
+  position: relative;
+}
+.item3 {
+  background: url(../../img/pic6.webp) no-repeat center top/100% 50%;
+  position: relative;
+}

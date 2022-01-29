@@ -1,0 +1,68 @@
+.section3 {
+  width: 100%;
+  margin-top: 14.3125rem;
+  &__article--title {
+    @include media("320px") {
+      @include flex(center, center, column);
+    }
+    @include media("768px") {
+      @include flex(space-between, center, row);
+    }
+    @include media("1440px") {
+      @include flex(space-between, center);
+      padding: 0rem 13.75rem 0rem 8.125rem;
+    }
+  }
+  &__container {
+    @include media("320px") {
+      width: 100%;
+    }
+    @include media("1440px") {
+      width: 29%;
+      margin-right: 6.875rem;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    width: 80%;
+  }
+  &__line {
+    width: 56px;
+    margin-left: 0px;
+    height: 3px;
+    background: black;
+  }
+  &__text {
+    color: #7d7987;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  &__button {
+    border: 1.4px solid #458ff6;
+    border-radius: 55px;
+    padding: 10px 45px;
+    background: white;
+    margin-top: 3rem;
+    position: relative;
+  }
+  &__button--link {
+    color: #458ff6;
+    font-weight: 700;
+    font-size: 0.9375rem;
+  }
+  &__link--img {
+    position: absolute;
+    top: 12px;
+    right: 27px;
+    height: 13px;
+  }
+  &__img {
+    @include media("320px") {
+      width: 95%;
+      margin-top: 1rem;
+    }
+    @include media("1024px") {
+    }
+  }
+}
