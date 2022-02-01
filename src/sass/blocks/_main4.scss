@@ -1,7 +1,7 @@
 .section4 {
   max-width: 100%;
   margin-top: 220px;
-  background: url(../../img/bg_main4.webp) no-repeat right center;
+  background: url(../img/bg_main4.png) no-repeat right center;
   position: relative;
   &__article--title {
     @include flex(center, center, column);
@@ -108,14 +108,14 @@ padding-bottom: 20px;
   }
 }
 .item1 {
-  background: url(../../img/pic4.webp) no-repeat center top/100% 50%;
+  background: url(../img/pic4.png) no-repeat center top/100% 50%;
   position: relative;
 }
 .item2 {
-  background: url(../../img/pic5.webp) no-repeat center top/100% 50%;
+  background: url(../img/pic5.png) no-repeat center top/100% 50%;
   position: relative;
 }
 .item3 {
-  background: url(../../img/pic6.webp) no-repeat center top/100% 50%;
+  background: url(../img/pic6.png) no-repeat center top/98% 50%;
   position: relative;
 }
